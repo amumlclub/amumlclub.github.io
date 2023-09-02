@@ -16,9 +16,7 @@
   scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/* General */
 body {
   font-family: var(--font-default);
   color: var(--color-default);
@@ -48,9 +46,7 @@ h6 {
   color: #feb900;
 }
 
-/*--------------------------------------------------------------
-# Sections & Section Header
---------------------------------------------------------------*/
+/* Section and Section Headers */
 section {
   padding: 80px 0;
   overflow: hidden;
@@ -99,9 +95,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/* breadcrumbs */
 .breadcrumbs {
   padding: 6px 0 6px 0;
   min-height: 15vh;
@@ -232,7 +226,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
+# Disable  animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
@@ -240,9 +234,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* Headers */
 .header {
   z-index: 997;
   position: absolute;
@@ -269,9 +261,7 @@ section {
   color: var(--color-primary);
 }
 
-/*--------------------------------------------------------------
-# Desktop Navigation
---------------------------------------------------------------*/
+/* Desktop Navigation */
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
@@ -679,10 +669,10 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/* /* --------------------------------------------------------------
 # Constructions Section
 --------------------------------------------------------------*/
-.constructions .card-item {
+/* .constructions .card-item {
   border: 1px solid rgba(82, 86, 94, 0.2);
   background: #fff;
   position: relative;
@@ -710,7 +700,7 @@ section {
 .constructions .card-item p {
   color: var(--color-secondary);
   margin: 0;
-}
+} */ */
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1314,6 +1304,8 @@ section {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  height : 256px;
+  width : 256px;
 }
 
 @media (max-width: 1024px) {
@@ -2678,4 +2670,64 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+
+/* All team Members Page */
+
+.allMembersLink { 
+  display : flex;
+  justify-content: center;
+  text-align: center;
+  color: #feb900;
+  font-size: 20px;
+}
+
+.allMembersLink:hover {
+  color: black;
+  font-size: 30px;
+
+}
+
+a {
+  color: #feb900; 
+  text-decoration: none; /* Remove underlines by default (optional) */
+}
+
+/* Link styles on hover */
+a:hover {
+  color: black; /* Change the link color when hovered */
+}
+.btn-AAA {
+  background-color: #FFD700;
+  color: black; /* Set the font color to black */
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Use a sans-serif typeface */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-AAA:hover {
+  background-color: #FFEEAD;
+  color:black;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.heading-dev-page {
+  align-items: center;
+  text-align: center; 
+}
+
+.under-dev-page-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

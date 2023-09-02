@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href="assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = 'image-container'>
+        <img id ='PageUnderDevelopmentWarning' src = 'https://th.bing.com/th/id/R.ab0c01cf971a70183e96470a2e9390df?rik=k8h0GOdpMYE6UQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fdownload_515232.png&ehk=Eov%2bGcAU2ks2IP%2bhMGkdyBAstYg%2frw9Yx94ZTxHmuoI%3d&risl=&pid=ImgRaw&r=0' alt = 'just-warning-sign' height = "300" width = "300">
+
+    </div>
+    <h2 class = 'heading-dev-page' style = 'color: red;'>!!! This page is currently in development !!!</h2>
+
+    <div class="under-dev-page-buttons">
+        <button id="go_back_to_main_page" class="btn-AAA">Back to Main</button>
+        <button id="go_back_to_about_page" class="btn-AAA">Back to About</button>
+        <button id="go_back_to_contact_page" class="btn-AAA">Back to Contact</button>
+        <button id="go_back_to_projects_page" class="btn-AAA">Back to Projects</button>
+        <button id="go_back_to_events_page" class="btn-AAA">Back to Events</button>
+    </div>
+    
+    <script>
+        const back_to_main_page_button = document.getElementById('go_back_to_main_page');
+        const back_to_about_page_button = document.getElementById('go_back_to_about_page');
+        const back_to_contact_page_button = document.getElementById('go_back_to_contact_page');
+        const back_to_projects_page_button = document.getElementById('go_back_to_projects_page');
+        const back_to_events_page_button = document.getElementById('go_back_to_events_page');
+    
+        back_to_main_page_button.addEventListener('click', function() {
+            window.location.replace('index.html');
+        });
+    
+        back_to_about_page_button.addEventListener('click', function() {
+            window.location.replace('about.html'); // Change 'about.html' to the correct URL for your About page
+        });
+    
+        back_to_contact_page_button.addEventListener('click', function() {
+            window.location.replace('contact.html'); // Change 'contact.html' to the correct URL for your Contact page
+        });
+    
+        back_to_projects_page_button.addEventListener('click', function() {
+            window.location.replace('projects.html'); // Change 'projects.html' to the correct URL for your Projects page
+        });
+    
+        back_to_events_page_button.addEventListener('click', function() {
+            window.location.replace('events.html'); // Change 'events.html' to the correct URL for your Events page
+        });
+    </script>
+    
+</body>
+</html>

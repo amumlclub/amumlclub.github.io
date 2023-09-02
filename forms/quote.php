@@ -23,7 +23,7 @@
   $contact->from_email = $_POST['email'];
   $contact->subject = 'Request for a quote';
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
+  // Code for SMTP email
   /*
   $contact->smtp = array(
     'host' => 'example.com',
