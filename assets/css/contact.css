@@ -1,0 +1,138 @@
+/* ==========================================
+   Contact Page Specific Styles
+   ========================================== */
+
+/* Hero Section */
+.contact-hero {
+  padding: 140px 0 80px 0;
+  background: #f5f6f7;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.contact-hero p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #6c757d;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Override Header for Light Background */
+.header {
+  position: relative;
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+.header .logo h1 {
+  color: var(--color-secondary);
+}
+
+.navbar a {
+  color: var(--color-secondary);
+}
+
+.navbar a:hover,
+.navbar .active {
+  color: var(--color-primary);
+}
+
+/* Main Contact Section */
+.contact-main {
+  padding: 80px 0;
+}
+
+/* Info Cards */
+.contact-main .info-item {
+  border-radius: 12px;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.contact-main .info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Styling */
+.contact-main .php-email-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.contact-main .php-email-form input,
+.contact-main .php-email-form textarea {
+  border-radius: 8px;
+  border: 1px solid #e4e6eb;
+  padding: 12px 16px;
+  font-size: 15px;
+}
+
+.contact-main .php-email-form input:focus,
+.contact-main .php-email-form textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: none;
+}
+
+.contact-main .php-email-form button[type=submit] {
+  border-radius: 50px;
+  padding: 12px 40px;
+  font-weight: 600;
+  background: var(--color-primary);
+  border: none;
+  transition: 0.3s;
+}
+
+.contact-main .php-email-form button[type=submit]:hover {
+  background: #ffc732;
+}
+
+/* Map Styling */
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .contact-hero h1 {
+    font-size: 34px;
+  }
+
+  .contact-main .php-email-form {
+    padding: 25px;
+  }
+}
+
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+  display: none;
+}
+.form-status .loading {
+  font-size: 14px;
+  color: #555;
+}
+
+.form-status .success-message {
+  font-weight: 500;
+}
+
+.form-status .error-message {
+  font-weight: 500;
+}

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Contact Us | MLC</title>
+
+    <link href="/assets/img/mlc-logo.jpeg" rel="icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Global CSS -->
+    <link href="/assets/css/main.css" rel="stylesheet" />
+
+    <!-- Page Specific CSS -->
+    <link href="/assets/css/contact.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1>
+            Machine Learning Club
+            <span>|</span> A<span>.</span>M<span>.</span>U<span>.</span>
+          </h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <!-- Dropdown Example -->
+            <li class="dropdown">
+              <a href="#">
+                <span>Explore</span>
+                <i class="bi bi-chevron-down dropdown-indicator"></i>
+              </a>
+              <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Events</a></li>
+                <li><a href="#">Research</a></li>
+              </ul>
+            </li>
+
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ======= Contact Hero ======= -->
+      <section class="contact-hero">
+        <div class="container text-center">
+          <h1>Contact Machine Learning Club</h1>
+          <p>
+            Have an idea, collaboration proposal, or technical query? Let’s
+            build something intelligent together.
+          </p>
+        </div>
+      </section>
+
+      <!-- ======= Contact Main Section ======= -->
+      <section class="contact-main">
+        <div class="container">
+          <!-- Info Cards -->
+          <div class="row gy-4 mb-5">
+            <div class="col-lg-4 col-md-6">
+              <div class="info-item text-center">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Visit Us</h3>
+                <p>AI Lab, ZHCET, AMU</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="info-item text-center">
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <p>amumlc@zhcet.ac.in</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="info-item text-center">
+                <i class="bi bi-linkedin"></i>
+                <h3>Connect</h3>
+                <p>linkedin.com/company/amumlclub</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form + Map -->
+          <div class="row gy-4">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mt-3">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    rows="6"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-status mt-3">
+                  <div class="loading d-none">Sending message...</div>
+                  <div class="error-message text-danger d-none"></div>
+                  <div class="success-message text-success d-none">
+                    Your message has been sent successfully.
+                  </div>
+                </div>
+
+                <div class="text-center mt-4">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Map -->
+            <div class="col-lg-6 contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.582250431904!2d78.07377317526159!3d27.914790276064263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a4fcb0ea6ddb%3A0x765b62941f223b8e!2sZakir%20Husain%20College%20of%20Engineering%20and%20Technology%2C%20AMU!5e0!3m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ======= Original Footer (Unchanged) ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-content position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+                <h3>Machine Learning Club</h3>
+                <p>
+                  AI LAB<br />
+                  Interdisciplinary Centre for Artificial Intelligence, A.M.U<br /><br />
+                  <strong>Email:</strong> mlc@gmail.com<br />
+                </p>
+                <div class="social-links d-flex mt-3">
+                  <a href="https://www.facebook.com/amumlclub"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/amumlclub/"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/company/amumlclub/mycompany/"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Get In Touch</h4>
+              <ul>
+                <li><a href="#">Secretary</a></li>
+                <li><a href="#">Treasurer</a></li>
+                <li><a href="#">Technical Team</a></li>
+                <li><a href="#">Publicity Team</a></li>
+                <li><a href="#">Event Management Team</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal text-center position-relative">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright
+            <strong><span>Machine Learning Club | AMU</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Required Core -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optional: Only if using scroll animations -->
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Global JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      const form = document.querySelector(".php-email-form");
+      const loadingEl = form.querySelector(".loading");
+      const errorEl = form.querySelector(".error-message");
+      const successEl = form.querySelector(".success-message");
+      const submitBtn = form.querySelector(".submit-btn");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Reset states
+        errorEl.classList.add("d-none");
+        successEl.classList.add("d-none");
+
+        // Show loading
+        loadingEl.classList.remove("d-none");
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        const formData = {
+          name: form.name.value.trim(),
+          email: form.email.value.trim(),
+          subject: form.subject.value.trim(),
+          message: form.message.value.trim(),
+        };
+
+        try {
+          const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+          });
+
+          const result = await response.json();
+
+          loadingEl.classList.add("d-none");
+
+          if (response.ok) {
+            successEl.textContent =
+              result.success || "Message sent successfully.";
+            successEl.classList.remove("d-none");
+            form.reset();
+          } else {
+            errorEl.textContent = result.error || "Something went wrong.";
+            errorEl.classList.remove("d-none");
+          }
+        } catch (err) {
+          loadingEl.classList.add("d-none");
+          errorEl.textContent = "Server unreachable. Please try again later.";
+          errorEl.classList.remove("d-none");
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Message";
+      });
+    </script>
+  </body>
+</html>
