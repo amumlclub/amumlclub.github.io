@@ -1,0 +1,128 @@
+/* =========================
+   TEAM PAGE STYLES
+========================= */
+.team {
+  background-color: #f9f9f9;
+}
+.team-breadcrumb {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  min-height: 40vh;
+  color: #fff;
+  text-align: center;
+}
+
+.team-breadcrumb h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.team-breadcrumb p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.team .member {
+  transition: all 0.3s ease;
+}
+
+.team .member:hover {
+  transform: translateY(-8px);
+}
+
+.team .member-img img {
+  object-fit: cover;
+  background-position: center;
+}
+
+.team .member-info h4 {
+  font-size: 20px;
+}
+
+.team .member-info span {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+/* =========================
+   TEAM HERO SECTION
+========================= */
+
+.team-hero {
+  min-height: 70vh;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+              url("../img/team-hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.team-hero .club-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.team-hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.team-hero p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .team-hero h1 {
+    font-size: 36px;
+  }
+
+  .team-hero p {
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   MODERN TEAM CARDS
+========================= */
+
+.member-card {
+  position: relative;
+  text-align: center;
+  padding-top: 40px;
+  transition: all 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+}
+
+.member-img {
+  max-height: 420px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.member-card:hover .member-img {
+  transform: scale(1.03);
+}
+
+.member-info {
+  margin-top: 20px;
+}
+
+.member-info h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.member-info span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #6c757d;
+}
