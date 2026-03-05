@@ -1,0 +1,639 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Matter Light";
+
+}
+.Main-container {
+    width: 100%;
+    min-height: 100vh;
+}
+.hero-container{
+    position: relative;
+    background-image: url(/assets/img/home-page/hero-image.jpeg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+
+.Header{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.Header  #LogoI{
+    height: 50px;
+    width: 150px;
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6)  
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.Navbar a {
+    text-decoration: none;
+    color:#faf7f5   
+}
+
+.Navbar a:hover{
+    scale: calc(1.1);
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+    border-radius: 50%;
+
+}
+
+.Name-section{
+    padding-top: 80px;
+    padding-bottom: auto;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    
+}
+
+.Name-section .line1{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-left: 600px;  
+    
+}
+
+.Member-section{
+    width: 100%;
+    height: 120px;
+    background-image: url(assets/img/home-page/our-mission-page.png);
+    background-color: black;
+    display: flex;
+    padding-left: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: auto;
+    background-position: center;
+    gap: 150px;
+      
+}
+
+.Member-section .Member{
+    position: relative;
+    padding: 18px 50px;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, red ,blue);
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+    transition: transform 0.2s ease;
+
+}
+.Member-section .Member:hover {
+    transform: scale(1.05);
+}
+
+.Member-section .Member::before
+.Member-section .Member::after{
+    content: '';
+    position: absolute;
+    left: -50%;
+    width: 200%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.25)20%,transparent 70%);
+    animation: wave 6s linear infinite;
+    border-radius: 40%;
+    z-index: 1;
+}
+.Member-section .Member::after {
+    animation-duration: 8s;
+    opacity: 0.6;
+}
+
+.Member-section .Member .spoil{
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,rgba(255,255,255,0.3)0% ,transparent 60%);
+    transform: skewX(-25deg);
+    animation: shineMove 4s infinite;
+    z-index: 2;
+}
+
+@keyframes wave{
+    0% {
+        transform:translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10%) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+@keyframes shineMove {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+
+
+
+
+
+.About-container{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-image: url(our-mission\ page.png);
+    background-size: cover;
+    background-position: center;
+}
+.Mission-section{
+    height: 80vh;
+    width: 50%;
+    padding-bottom: 20vh;
+    padding-top: 20vh;
+    padding-left: 12%;  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+
+.object-name {
+    font-size: 40px;
+    
+}
+
+.object-name-content{
+    font-size: 20px;
+
+}
+
+.mission-points{
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+     height: 80vh;
+     
+     position: absolute;
+     top: 0;
+     left: 50%;
+     gap: 45px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+    
+}
+
+.mission-points .our-Icon{
+    width: 40%;
+    height: 140px;
+    
+    border: 2px solid black;
+    
+}
+.mission-points .our-Icon span{
+    color: #fff;
+}
+
+.mission-points .our-Icon .mission-para {
+    color: #fff;
+
+}
+
+.mission-points .our-Icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.mission-points #skill-master{
+    margin-left: 70px; 
+    border-radius: 10%;  
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+}
+
+.mission-points #skill-master p{
+    font-size: 20px;
+}
+
+.mission-points #skill-master .skill {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.mission-points #skill-master .skill span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+.mission-points #theory{
+    margin-left: 300px ;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+    border-radius: 10%;
+}
+
+.mission-points #theory p{
+    font-size: 20px;
+    padding-left: 5px;
+    
+}
+
+.mission-points #theory .theory-icon{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 10px;
+
+}
+
+.mission-points #theory .theory-icon span{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.mission-points #trophy{
+    margin-left: 100px;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+    border-radius: 10%;
+}
+
+.mission-points #trophy p{
+    font-size: 18px;
+    padding-left: 5px;
+}
+.mission-points #trophy .trophy-icon{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 10px;
+    
+}
+
+.mission-points #trophy .trophy-icon span{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.mission-points #globe{
+    margin-left: 300px;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+    border-radius: 10%;
+}
+
+.mission-points #globe p{
+     font-size: 18px;
+    padding-left: 5px;
+}
+
+.mission-points #globe .globe-icon{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 10px;   
+}
+
+.mission-points #globe .globe-icon span{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Objective-container {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background-image: url(our-mission\ page.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.Objective-container .Objective-heading {
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Objective-container .Objective-content .Objective-upper-box{
+    width: 100%;
+    height: 300px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.Objective-container .Objective-content .Objective-upper-box .Objective-one{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}
+.Objective-container .Objective-content .Objective-upper-box .Objective-two{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.Objective-container .Objective-content .Objective-upper-box #video-id{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.Objective-container .Objective-content .Objective-lower-box{
+    width: 100%;
+    height: 260px;
+    
+    display: flex;
+    gap: 200px;
+    padding-left: 200px;
+
+}
+
+.Objective-container .Objective-content .Objective-upper-box .Ubox{
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+
+}
+
+.Objective-container .Objective-content .Objective-lower-box .Lbox{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    margin-top: 30px;
+    border-radius: 10%;
+
+}
+.Objective-container .Objective-content .Objective-lower-box #MLCphoto{
+    background-image: url(transformer-image.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+}
+.Objective-container .Objective-content .Objective-lower-box #Sec-lower-box{
+    width: 500px;
+    border-radius: 15%;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8) ,0 0 40px rgba(0, 242, 254, 0.6);
+
+}
+
+.Objective-container .Objective-content .Objective-lower-box .Objective-three{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}
+.footer-container {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background: #2c7bb0;
+    background: linear-gradient(90deg, rgba(44, 123, 176, 1) 0%, rgba(209, 179, 119, 1) 50%, rgba(189, 66, 103, 1) 100%);
+    
+}
+
+
+.footer-container .Footer-box-one{
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer-container .Footer-box-one .Footer-logo {
+    width: 100%;
+    height: 25vh;
+}
+
+.footer-container .Footer-box-one .Footer-content{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.footer-container .Footer-box-one .Footer-content .footer-big-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-container .Footer-box-one .Footer-content .footer-big-box .footer-content-Follow {
+    padding-left: 80px;
+}
+
+
+.footer-container .Footer-box-one .Footer-content .footer-content-image {
+    display: flex;
+    padding-left: 80px;
+    gap: 8px;
+}
+
+.footer-container .Footer-box-one .Footer-content .footer-content-image .Follow-logo {
+    width: 40px;
+    height: 40px;
+
+}
+
+.footer-container .Footer-box-one .footer-bottom {
+    padding-left: 80px;
+    font-size: 20px;
+    
+}
+
+.footer-container .Footer-box-one #mlC-logo{
+    width: 300px;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+.footer-container .Footer-box-two{
+    position: absolute;
+    width: 60%; 
+    height: 40vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+
+}
+
+.footer-container .Footer-box-two .footer-box-collec {
+    width: 210px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-left: 2px solid black;
+    
+}
+
+.footer-container .Footer-box-two #Useful-links .Useful-home {
+    padding-left: 30px;   
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    
+}
+
+.footer-container .Footer-box-two #Useful-links .home-points {
+    padding-left: 30px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.footer-container .Footer-box-two #Useful-links .home-points p{
+    font-size: 18px;
+    font-weight: 500;    
+}
+
+.footer-container .Footer-box-two #Get-in-touch .touch-home {
+    padding-left: 30px;   
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.footer-container .Footer-box-two #Get-in-touch .touch-points {
+    padding-left: 30px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.footer-container .Footer-box-two #Get-in-touch .touch-points p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-container .Footer-box-two #Contact-us .Contact-home {
+    padding-left: 30px;   
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.footer-container .Footer-box-two #Contact-us .Contact-points {
+    
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-container .Footer-box-two #Contact-us .Contact-points .Email{
+    display: flex;
+    gap: 4px;
+    padding-left: 10px;
+
+}
+
+.footer-container .Footer-box-two #Contact-us .Contact-points .Email .Email-right {
+    padding-top: 5px;
+}
+
+.footer-container .Footer-box-two #Contact-us .Contact-points img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-container .Footer-box-two #Contact-us .Contact-points .location{
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+.footer-container .Footer-box-two #Contact-us .Contact-points .location .location-right{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-container .copy-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.footer-container .copy-container .Copyright-upper{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.footer-container .copy-container .Copyright-lower{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.footer-container .copy-container .Copyright-lower .Github-link a{
+    text-decoration: none;
+}
