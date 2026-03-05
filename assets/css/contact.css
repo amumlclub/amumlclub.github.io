@@ -2,47 +2,49 @@
    Contact Page Specific Styles
    ========================================== */
 
-/* Hero Section */
-.contact-hero {
-  padding: 140px 0 80px 0;
-  background: #f5f6f7;
-  text-align: center;
+/* =========================
+CONTACT HERO
+========================= */
+
+.contact-hero{
+min-height:70vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+url("../img/contact-hero.jpg") center/cover no-repeat;
+
+color:#fff;
+text-align:center;
+padding:120px 20px;
 }
 
-.contact-hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  color: var(--color-secondary);
+/* club label */
+
+.contact-hero .club-name{
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:14px;
+opacity:0.8;
+margin-bottom:15px;
 }
 
-.contact-hero p {
-  margin-top: 15px;
-  font-size: 18px;
-  color: #6c757d;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+/* heading */
+
+.contact-hero h1{
+font-size:56px;
+font-weight:700;
+margin-bottom:20px;
 }
 
-/* Override Header for Light Background */
-.header {
-  position: relative;
-  background: #ffffff;
-  padding: 20px 0;
+/* description */
+
+.contact-hero p{
+font-size:18px;
+max-width:650px;
+margin:0 auto;
+opacity:0.9;
 }
 
-.header .logo h1 {
-  color: var(--color-secondary);
-}
-
-.navbar a {
-  color: var(--color-secondary);
-}
-
-.navbar a:hover,
-.navbar .active {
-  color: var(--color-primary);
-}
 
 /* Main Contact Section */
 .contact-main {
@@ -50,12 +52,12 @@
 }
 
 /* Info Cards */
-.contact-main .info-item {
-  border-radius: 12px;
-  padding: 30px;
-  background: #ffffff;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease;
+.contact-main .info-item{
+border-radius:12px;
+padding:30px;
+background:#1f2937;
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
+color:#e5e7eb;
 }
 
 .contact-main .info-item:hover {
@@ -64,17 +66,20 @@
 }
 
 /* Form Styling */
-.contact-main .php-email-form {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+.contact-main .php-email-form{
+background:#1f2937;
+padding:40px;
+border-radius:16px;
+box-shadow:0 15px 35px rgba(0,0,0,0.4);
+color:#e5e7eb;
 }
 
 .contact-main .php-email-form input,
 .contact-main .php-email-form textarea {
   border-radius: 8px;
-  border: 1px solid #e4e6eb;
+border:1px solid #374151;
+background:#111827;
+color:#e5e7eb;
   padding: 12px 16px;
   font-size: 15px;
 }
@@ -82,6 +87,7 @@
 .contact-main .php-email-form input:focus,
 .contact-main .php-email-form textarea:focus {
   border-color: var(--color-primary);
+  outline: none;
   box-shadow: none;
 }
 
@@ -95,7 +101,7 @@
 }
 
 .contact-main .php-email-form button[type=submit]:hover {
-  background: #ffc732;
+  background: #2563eb;
 }
 
 /* Map Styling */
@@ -135,4 +141,8 @@
 
 .form-status .error-message {
   font-weight: 500;
+}
+.contact-main .info-item:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(59,130,246,0.25);
 }

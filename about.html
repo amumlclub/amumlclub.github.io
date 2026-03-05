@@ -1,82 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Team | MLC</title>
+<title>Team | MLC</title>
 
-  <link href="assets/img/mlc-logo.jpeg" rel="icon">
+<link href="assets/img/mlc-logo.jpeg" rel="icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<!-- Vendor CSS -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Team Page CSS -->
-  <link href="assets/css/team.css" rel="stylesheet">
+<!-- Main CSS -->
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/team.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header id="header" class="header d-flex align-items-center">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <a href="index.html" class="logo d-flex align-items-center">
-      <h1>Machine Learning Club <span>|</span> A.M.U</h1>
-    </a>
+<a href="index.html" class="logo d-flex align-items-center">
+<h1>Machine Learning Club <span>|</span> A.M.U</h1>
+</a>
 
+<i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
+<nav id="navbar" class="navbar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="team.html" class="active">Team</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="Events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
 
-    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="team.html" class="active">Team</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="Events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-  </div>
+</div>
 </header>
 
 <main id="main">
 
-<!-- ======= Team Hero Section ======= -->
+<!-- HERO -->
 <section class="team-hero d-flex align-items-center">
-  <div class="container text-center" data-aos="fade-up">
-    <h5 class="club-name">AMU Machine Learning Club</h5>
-    <h1>Meet Our Team</h1>
-    <p>
-      A community of builders, researchers, and problem-solvers shaping
-      the future with machine learning.
-    </p>
-  </div>
+<div class="container text-center">
+<h5 class="club-name">AMU Machine Learning Club</h5>
+<h1>Meet Our Team</h1>
+<p>A community of builders, researchers, and problem-solvers shaping the future with machine learning.</p>
+</div>
 </section>
 
-<!-- Team Section -->
-<section id="team" class="team section-bg">
-  <div class="container" data-aos="fade-up">
 
-    <div class="section-header">
-      <h2>Our Core Team</h2>
-      <p>Meet Our Leads!</p>
+<!-- ABOUT -->
+<section class="about-club">
+<div class="container">
+<h2 class="section-title">About Us</h2>
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+<img src="assets/img/club-photo.png" class="img-fluid about-img">
+</div>
+
+<div class="col-lg-6">
+<p>
+The Machine Learning Club at Aligarh Muslim University is a student-driven
+community exploring artificial intelligence, machine learning, and data science.
+</p>
+
+<p>
+Through workshops, collaborative projects, research initiatives, and hackathons,
+we aim to bridge theoretical learning with practical innovation.
+</p>
+
+<p>
+Our mission is to create a space where students learn, build, and push the
+boundaries of intelligent systems together.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- GROUP PHOTO
+<section class="team-divider">
+<div class="container text-center">
+<img src="assets/img/team/group-photo.jpg" class="img-fluid group-photo">
+</div>
+</section> -->
+
+
+<div class="section-header text-center">
+      <h2>The Team</h2>
+      <p>Meet Our Leads</p>
     </div>
 
-    <div class="row gy-5">
+    <div class="core-team-row">
 
       <!-- President -->
-      <div class="col-lg-4 col-md-6 member">
+      <div class="member">
         <div class="member-card">
           <img src="assets/img/team/Amaan.webp" alt="Amaan" class="member-img">
           <div class="social">
@@ -90,9 +121,9 @@
       </div>
 
       <!-- Vice President -->
-      <div class="col-lg-4 col-md-6 member">
+      <div class="member">
         <div class="member-card">
-          <img src="assets/img/team/Samiya.jpg" alt="Samiya Kamal" class="member-img">
+          <img src="assets/img/team/Samiya.png" alt="Samiya Kamal" class="member-img">
           <div class="social">
             <a href="https://www.linkedin.com/in/samiya-kamal-8231582a1/"><i class="bi bi-linkedin"></i></a>
           </div>
@@ -104,7 +135,7 @@
       </div>
 
       <!-- Secretary -->
-      <div class="col-lg-4 col-md-6 member">
+      <div class="member">
         <div class="member-card">
           <img src="assets/img/team/Arham.webp" alt="Arham" class="member-img">
           <div class="social">
@@ -118,7 +149,7 @@
       </div>
 
       <!-- Technical Lead -->
-      <div class="col-lg-4 col-md-6 member">
+      <div class="member">
         <div class="member-card">
           <img src="assets/img/team/Basil.webp" alt="Basil" class="member-img">
           <div class="social">
@@ -132,21 +163,21 @@
       </div>
 
       <!-- Design and Media Lead -->
-      <div class="col-lg-4 col-md-6 member">
+      <div class="member">
         <div class="member-card">
-          <img src="assets/img/team/MahwishFatima.jpg" alt="Mahwish Fatima" class="member-img">
+          <img src="assets/img/team/MahwishFatima.png" alt="Mahwish Fatima" class="member-img">
           <div class="social">
             <a href="https://www.linkedin.com/in/mahwishfatma/"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
         <div class="member-info text-center">
           <h4>Mahwish Fatima</h4>
-          <span>Design and Media Lead</span>
+          <span>Design & Media Lead</span>
         </div>
       </div>
 
       <!-- Events Coordinator Lead -->
-      <div class="col-lg-4 col-md-6 member">
+      <div class="member">
         <div class="member-card">
           <img src="assets/img/team/Mahum.webp" alt="Mahum" class="member-img">
           <div class="social">
@@ -160,7 +191,7 @@
       </div>
 
       <!-- Technical Co-Lead -->
-      <div class="col-lg-4 col-md-6 member mx-lg-auto">
+      <div class="member">
         <div class="member-card">
           <img src="assets/img/team/SanaTasneem.webp" alt="Sana Tasneem" class="member-img">
           <div class="social">
@@ -173,16 +204,107 @@
         </div>
       </div>
 
-      <p id='allTeamMembers' class='allMembersLink'>
-        <a href='AllTeamMembers.html'>Say hi to all the team members!</a>
-      </p>
-
     </div>
   </div>
 </section>
 
-  
-      <!-- ======= Original Footer (Unchanged) ======= -->
+
+
+
+<!-- FACULTY -->
+<section class="faculty-section">
+<div class="container">
+
+<div class="section-header text-center">
+<h2>Faculty Advisors</h2>
+</div>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-3 col-md-4">
+<div class="advisor-card text-center">
+<img src="assets/img/ProfRashidAli.png" class="advisor-img">
+<h5>Prof. Rashid Ali</h5>
+<span>Faculty Advisor</span>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4">
+<div class="advisor-card text-center">
+<img src="assets/img/DrJunaidAli Reshi.png" class="advisor-img">
+<h5>Dr. Junaid Ali Reshi</h5>
+<span>Faculty Advisor</span>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-4">
+<div class="advisor-card text-center">
+<img src="assets/img/DrNadeemAkhtar.png" class="advisor-img">
+<h5>Dr. Nadeem Akhtar</h5>
+<span>Faculty Advisor</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- DEPARTMENTS -->
+<section class="departments">
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4">
+<h3 class="dept-title">Event Coordinator</h3>
+<div class="dept-grid">
+
+<div class="dept-member">
+<img src="assets/img/team/member1.jpg">
+<p>Name</p>
+</div>
+
+<div class="dept-member">
+<img src="assets/img/team/member2.jpg">
+<p>Name</p>
+</div>
+
+</div>
+</div>
+
+<div class="col-lg-4">
+<h3 class="dept-title">PR & Media</h3>
+<div class="dept-grid">
+
+<div class="dept-member">
+<img src="assets/img/team/member3.jpg">
+<p>Name</p>
+</div>
+
+</div>
+</div>
+
+<div class="col-lg-4">
+<h3 class="dept-title">Technical</h3>
+<div class="dept-grid">
+
+<div class="dept-member">
+<img src="assets/img/team/member4.jpg">
+<p>Name</p>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+
+    <!-- ======= Original Footer (Unchanged) ======= -->
     <footer id="footer" class="footer">
       <div class="footer-content position-relative">
         <div class="container">
@@ -245,22 +367,8 @@
           <div class="credits"> Website designed & created by: <a href="https://github.com/Ahmad-o-Zakariya">Ahmad Zakariya |</a> <a href="https://github.com/mdadnan-codes">MD Adnan |</a><a href="https://github.com/Aquib-Husain">Aquib Husain</a> </div>
         </div>
       </div>
-    </footer>  
+    </footer>
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
-
-
-  {% comment %} <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script> {% endcomment %}
-
-  
-<!-- Scripts -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/js/main.js"></script>

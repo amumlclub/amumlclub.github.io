@@ -1,0 +1,167 @@
+/* HERO */
+
+.events-hero{
+
+min-height:70vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+color:#fff;
+
+padding:150px 20px 100px 20px;
+
+background:
+linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url("../img/events-bg.jpg") center/cover no-repeat;
+
+}
+
+.events-hero h1{
+
+font-size:56px;
+font-weight:700;
+margin-bottom:20px;
+
+}
+
+.events-hero p{
+
+font-size:18px;
+max-width:650px;
+margin:auto;
+
+}
+
+/* EVENT LIST */
+
+.events-list{
+min-height: 100vh;
+padding:100px 0;
+
+}
+
+.event-card{
+
+background:#1f2937;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+
+transition:0.3s;
+
+color:#e5e7eb;
+
+}
+
+.event-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 45px rgba(0,0,0,0.5);
+
+}
+.event-date{
+
+display:block;
+
+margin-top:10px;
+
+font-weight:600;
+
+color:var(--color-primary);
+
+}
+.service-item{
+
+cursor:pointer;
+transition:0.3s;
+
+}
+
+.service-item:hover{
+
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+
+}
+/* SERVICES EVENT CARDS */
+
+.services{
+
+padding:100px 0;
+
+}
+
+.service-item{
+
+background:#1f2937;
+
+padding:40px;
+
+border-radius:14px;
+
+box-shadow:0 12px 35px rgba(0,0,0,0.35);
+
+transition:all 0.35s ease;
+
+height:100%;
+
+color:#e5e7eb;
+
+}
+
+.service-item:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 50px rgba(0,0,0,0.5);
+
+}
+.service-item .icon{
+
+font-size:36px;
+
+color:var(--color-primary);
+
+margin-bottom:20px;
+
+}
+.service-item h3{
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+.service-item p{
+
+color:#9ca3af;
+
+}
+
+.service-item .readmore{
+
+margin-top:15px;
+
+display:inline-block;
+
+font-weight:600;
+
+color:var(--color-primary);
+
+}
+
+.services .row{
+
+max-width:1000px;
+
+margin:auto;
+
+}

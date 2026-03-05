@@ -1,128 +1,340 @@
-/* =========================
-   TEAM PAGE STYLES
-========================= */
-.team {
-  background-color: #f9f9f9;
-}
-.team-breadcrumb {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
-  min-height: 40vh;
-  color: #fff;
-  text-align: center;
-}
-
-.team-breadcrumb h2 {
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.team-breadcrumb p {
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-.team .member {
-  transition: all 0.3s ease;
-}
-
-.team .member:hover {
-  transform: translateY(-8px);
-}
-
-.team .member-img img {
-  object-fit: cover;
-  background-position: center;
-}
-
-.team .member-info h4 {
-  font-size: 20px;
-}
-
-.team .member-info span {
-  font-size: 14px;
-  letter-spacing: 0.5px;
-}
-/* =========================
-   TEAM HERO SECTION
-========================= */
+/* ====================================
+   HERO SECTION
+==================================== */
 
 .team-hero {
   min-height: 70vh;
   background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
               url("../img/team-hero.jpg") center/cover no-repeat;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 120px 20px;
-}
-
-.team-hero .club-name {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 14px;
-  opacity: 0.8;
-  margin-bottom: 15px;
 }
 
 .team-hero h1 {
   font-size: 56px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .team-hero p {
-  font-size: 18px;
   max-width: 650px;
-  margin: 0 auto;
+  margin: auto;
   opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-  .team-hero h1 {
-    font-size: 36px;
-  }
 
-  .team-hero p {
-    font-size: 16px;
-  }
+/* ====================================
+   ABOUT SECTION
+==================================== */
+
+.about-club{
+padding:80px 0;
+background:#0f172a;
+color:#e5e7eb;
 }
 
-/* =========================
-   MODERN TEAM CARDS
-========================= */
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
 
-.member-card {
-  position: relative;
+.about-img {
+  border-radius: 10px;
+}
+
+
+/* ====================================
+   TEAM DIVIDER (GROUP PHOTO)
+==================================== */
+
+.team-divider{
+padding:60px 0;
+background:#111827;
+}
+
+.group-photo {
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+
+/* ====================================
+   CORE TEAM LAYOUT
+==================================== */
+
+.core-team-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.core-team-row .member {
+  min-width: 170px;
+  max-width: 170px;
+}
+
+.section-header h2{
+font-size:38px;
+font-weight:700;
+margin-bottom:10px;
+color: var(--color-default);
+}
+
+/* ====================================
+   CARD COMPONENTS
+==================================== */
+
+.member-card{
+position:relative;
+background:#1f2937;
+border-radius:12px;
+padding:18px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+transition:transform 0.35s ease, box-shadow 0.35s ease;
+overflow:hidden;
+color:#e5e7eb;
+}
+
+.advisor-card {
+  padding: 20px;
   text-align: center;
-  padding-top: 40px;
-  transition: all 0.3s ease;
 }
 
-.member-card:hover {
-  transform: translateY(-10px);
+.dept-member {
+  text-align: center;
 }
 
-.member-img {
-  max-height: 420px;
-  object-fit: contain;
-  transition: all 0.3s ease;
-}
 
-.member-card:hover .member-img {
-  transform: scale(1.03);
-}
+/* ====================================
+   MEMBER INFO TEXT
+==================================== */
 
 .member-info {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .member-info h4 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
-  margin-bottom: 5px;
 }
 
 .member-info span {
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 12px;
   color: #6c757d;
+}
+
+
+/* ====================================
+   IMAGE STYLES
+==================================== */
+
+.member-img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+}
+
+.advisor-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.dept-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* ====================================
+   SOCIAL ICON POSITION
+==================================== */
+
+.member-card .social {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+/* ====================================
+   FACULTY SECTION
+==================================== */
+
+.faculty-section{
+padding:80px 0;
+background:#0f172a;
+}
+
+
+/* ====================================
+   DEPARTMENTS SECTION
+==================================== */
+
+.departments{
+padding:80px 0;
+background:#111827;
+}
+
+.dept-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.dept-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/* ====================================
+   CORE TEAM CARD
+==================================== */
+
+/* image */
+
+.member-img{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+  transition:transform 0.35s ease;
+}
+
+/* text */
+
+.member-info{
+  margin-top:10px;
+}
+
+.member-info h4{
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:2px;
+}
+
+.member-info span{
+  font-size:12px;
+  color:#9ca3af;
+}
+
+/* linkedin icon */
+
+.member-card .social{
+  position:absolute;
+  top:12px;
+  right:12px;
+}
+
+.core-team-row{
+  display: flex;
+  flex-wrap: wrap;           /* allows items to move to next row */
+  justify-content: center;   /* centers items */
+  gap: 24px;                 /* space between cards */
+}
+
+.member{
+  flex: 1 1 250px;           /* responsive width */
+  max-width: 280px;          /* prevents too wide cards */
+}
+
+/* Tablet */
+@media (max-width: 992px){
+  .member{
+    flex: 1 1 45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .member{
+    flex: 1 1 100%;
+  }
+}
+
+/* ====================================
+   ADVISOR & DEPT MEMBER CARD (Same as Core Team)
+==================================== */
+
+.advisor-card,
+.dept-member{
+position:relative;
+background:#1f2937;
+border-radius:12px;
+padding:18px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+transition:transform 0.35s ease, box-shadow 0.35s ease;
+overflow:hidden;
+color:#e5e7eb;
+}
+
+/* image styling */
+
+.advisor-img,
+.dept-member img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+/* text spacing (if similar structure exists) */
+
+.advisor-info,
+.dept-member-info {
+  margin-top: 10px;
+}
+
+.advisor-info h4,
+.dept-member-info h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.advisor-info span,
+.dept-member-info span {
+  font-size: 12px;
+  color:#9ca3af;
+}
+
+/* ====================================
+   HOVER INTERACTIONS
+==================================== */
+
+
+
+/* card lift */
+.advisor-card:hover,
+.dept-member:hover{
+transform:translateY(-10px) scale(1.04);
+box-shadow:0 22px 50px rgba(0,0,0,0.45);
+}
+
+/* image zoom */
+.advisor-card:hover .advisor-img,
+.dept-member:hover img {
+  transform: scale(1.08);
+}
+
+
+.member-card:hover{
+transform:translateY(-14px) scale(1.06);
+box-shadow:0 25px 60px rgba(0,0,0,0.5);
+}
+/* image zoom */
+
+.member-card:hover .member-img{
+  transform:scale(1.12);
 }

@@ -1,0 +1,115 @@
+/* =========================
+MEMBERSHIP HERO
+========================= */
+
+.membership-hero{
+
+  min-height:70vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+  color:#fff;
+
+  padding:160px 20px 100px 20px;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+  url("../img/membership-hero.png") center/cover no-repeat;
+
+}
+
+.membership-hero .club-name{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:14px;
+  opacity:0.8;
+  margin-bottom:15px;
+}
+
+.membership-hero h1{
+  font-size:56px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.membership-hero p{
+  font-size:18px;
+  max-width:650px;
+  margin:auto;
+  opacity:0.9;
+}
+
+
+/* =========================
+PAYMENT SECTION
+========================= */
+
+.membership-payment{
+padding:100px 0;
+background:#0f172a;
+text-align:center;
+}
+.google-form-wrapper{
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+background:#1f2937;
+padding:20px;
+}
+.membership-benefits{
+
+padding:100px 0;
+background:#111827;
+
+}
+
+.benefit-card{
+background:#1f2937;
+padding:30px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+transition:0.35s;
+color:#e5e7eb;
+}
+
+.benefit-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(0,0,0,0.5);
+}
+
+.benefit-card i{
+font-size:34px;
+color:var(--color-primary);
+margin-bottom:15px;
+}
+
+.membership-form{
+padding:100px 0;
+background:#0f172a;
+}
+
+.apply-btn{
+background:var(--color-primary);
+border:none;
+padding:12px 35px;
+border-radius:30px;
+font-weight:600;
+color:white;
+transition:0.3s;
+}
+
+.apply-btn:hover{
+background:#2563eb;
+transform:translateY(-2px);
+}
+
+
+.section-header h2{
+font-size:38px;
+font-weight:700;
+margin-bottom:10px;
+color: var(--color-default);
+}
