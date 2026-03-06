@@ -255,8 +255,21 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  min-height: 40px;
   margin-right: 6px;
+}
+
+.header #LogoI{
+  height: 50px;
+  width: 150px;
+  border-radius: 10%;
+  transition: 0.3s ease;
+}
+
+.header #LogoI:hover{
+  box-shadow: 
+    0 0 20px rgba(79, 172, 254, 0.8),
+    0 0 40px rgba(0, 242, 254, 0.6);
 }
 
 .header .logo h1 {
@@ -269,6 +282,15 @@ section {
 
 .header .logo h1 span {
   color: var(--color-primary);
+}
+
+.header{
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 997;
 }
 
 /* Desktop Navigation */
@@ -2580,17 +2602,21 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
+
+  background: linear-gradient(
+    90deg,
+    rgba(44,123,176,1) 0%,
+    rgba(209,179,119,1) 50%,
+    rgba(189,66,103,1) 100%
+  );
 }
 
-.footer:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  inset: 0;
+.footer-logo img{
+  width: 220px;
+  margin-bottom: 20px;
 }
 
 .footer .footer-content .footer-info {
@@ -2685,7 +2711,7 @@ section {
 }
 
 .footer .footer-legal .credits a {
-  color: var(--color-primary);
+  color: black;
 }
 
 
@@ -2745,3 +2771,4 @@ a:hover {
   align-items: center;
   text-align: center;
 }
+
