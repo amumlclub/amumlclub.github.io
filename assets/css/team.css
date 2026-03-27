@@ -338,3 +338,65 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
 .member-card:hover .member-img{
   transform:scale(1.12);
 }
+.dept-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+/* subtle underline accent */
+.dept-heading::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #3b82f6;
+  position: absolute;
+  left: 30%;
+  bottom: -6px;
+  border-radius: 2px;
+}
+.member-card {
+  position: relative;
+}
+
+.member-card .social {
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.member-card::before {
+  pointer-events: none;
+}
+/* FORCE single row for departments */
+.departments .core-team-row {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+/* prevent shrinking */
+.departments .member {
+  flex: 0 0 auto;
+}
+.dept-row-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.departments .core-team-row {
+  flex-wrap: nowrap;
+  display: inline-flex;   /* key change */
+  gap: 24px;
+}
+
+.departments .member {
+  flex: 0 0 auto;
+}
+.faculty-section .member-img {
+  height: 180px;
+  object-fit: cover;
+}
