@@ -95,6 +95,7 @@ section {
   margin: 0 auto 0 auto;
 }
 
+
 @media (min-width: 1199px) {
   .section-header p {
     max-width: 60%;
