@@ -5,10 +5,11 @@
 .team-hero {
   min-height: 70vh;
   background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-              url("../img/membership-hero.png") center/cover no-repeat;
+              url("../img/membership-hero.png") center bottom/cover no-repeat;
   color: white;
   text-align: center;
   padding: 120px 20px;
+  
   
    
 }
