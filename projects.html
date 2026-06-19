@@ -50,19 +50,37 @@
 
 <nav id="navbar" class="navbar">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">Team</a></li>
-<li><a href="projects.html" class="active">Projects</a></li>
-<li><a href="Events.html">Events</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="membership.html">Membership</a></li>
-<li><i class="ri-menu-3-line"></i></li>
+<li class="hide-on-mobile"><a href="index.html">Home</a></li>
+<li class="hide-on-mobile"><a href="about.html">Team</a></li>
+<li class="hide-on-mobile"><a href="projects.html" class="active">Projects</a></li>
+<li class="hide-on-mobile"><a href="Events.html">Events</a></li>
+<li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+<li class="hide-on-mobile"><a href="membership.html">Membership</a></li>
+<li class="hide-on-desktop"><a href="#" onclick="OpenSidebar()"><i class="ri-menu-3-line"></i></a></li> 
 </ul>
 </nav>
 
 </div>
 
 </header>
+<header id="header-side" class="header ">
+   <nav id="navbar-side" >
+      <ul>
+          <li class="cross"><a href="#" onclick='CloseSidebar()'><i class="ri-close-line"></i></a></li>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">Team</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="membership.html">Membership</a></li>
+
+      </ul>
+    </nav>
+
+
+
+</header> 
+
 <main id="main">
 
 <!-- ======= Projects Hero Section ======= -->
@@ -353,6 +371,7 @@ Join the Club
 
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/primary.js" ></script>
 
 </body>
 

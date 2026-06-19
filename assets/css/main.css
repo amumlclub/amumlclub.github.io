@@ -243,7 +243,7 @@ section {
 
 /* Headers */
 
-.header{
+/*.header{
   background:#020617;
 }
 
@@ -296,7 +296,7 @@ section {
 }
 
 /* Desktop Navigation */
-@media (min-width: 1280px) {
+/*@media (min-width: 1280px) {
   .navbar {
     padding: 0;
   }
@@ -425,7 +425,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1366px) {
+/*@media (min-width: 1280px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -435,7 +435,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
+/*@media (min-width: 1280px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -443,10 +443,10 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
-@media (max-width: 1279px) {
+/* @media (max-width: 1279px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -551,7 +551,7 @@ section {
     background: rgba(0, 0, 0, 0.6);
     z-index: 9996;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Get Started Section
