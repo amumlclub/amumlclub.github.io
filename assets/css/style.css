@@ -202,6 +202,10 @@ font-family:"Open Sans",sans-serif;
     .footer-links {
         display:none;
     }
+    .mission-cards-row{
+        gap:1rem;
+
+    }
 }
 
 
