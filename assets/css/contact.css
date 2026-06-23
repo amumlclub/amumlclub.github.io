@@ -183,7 +183,7 @@ CONTACT HERO
 }
 @media(min-width:360px) and (max-width:800px){
     .container-fluid .logo .Logo img {
-        width: 20vw ;
+        width: 30vw ;
     }
     .footer-links {
         display:none;

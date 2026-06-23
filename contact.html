@@ -285,61 +285,9 @@
     <!-- Global JS -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/primary.js" ></script>
-      const form = document.querySelector(".php-email-form");
-      const loadingEl = form.querySelector(".loading");
-      const errorEl = form.querySelector(".error-message");
-      const successEl = form.querySelector(".success-message");
-      const submitBtn = form.querySelector(".submit-btn");
-
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
-
-        // Reset states
-        errorEl.classList.add("d-none");
-        successEl.classList.add("d-none");
-
-        // Show loading
-        loadingEl.classList.remove("d-none");
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Sending...";
-
-        const formData = {
-          name: form.name.value.trim(),
-          email: form.email.value.trim(),
-          subject: form.subject.value.trim(),
-          message: form.message.value.trim(),
-        };
-
-        try {
-          const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData),
-          });
-
-          const result = await response.json();
-
-          loadingEl.classList.add("d-none");
-
-          if (response.ok) {
-            successEl.textContent =
-              result.success || "Message sent successfully.";
-            successEl.classList.remove("d-none");
-            form.reset();
-          } else {
-            errorEl.textContent = result.error || "Something went wrong.";
-            errorEl.classList.remove("d-none");
-          }
-        } catch (err) {
-          loadingEl.classList.add("d-none");
-          errorEl.textContent = "Server unreachable. Please try again later.";
-          errorEl.classList.remove("d-none");
-        }
-
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Send Message";
-      });
-    </script>
+        
+        
+    
     
   </body>
 </html>
