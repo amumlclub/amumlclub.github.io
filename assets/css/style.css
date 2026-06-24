@@ -111,7 +111,7 @@ font-family:"Open Sans",sans-serif;
 }
 #navbar ul .hide-on-mobile a::after{
     content:'';
-    background:#2563eb;
+    background: #DBAB44;
     width:0;
     height:3px;
     position:absolute;
@@ -195,10 +195,7 @@ font-family:"Open Sans",sans-serif;
 }
 
 @media(min-width:360px) and (max-width:800px){
-    .container-fluid .logo .Logo img {
-        width:30vw ;
-        
-    }
+    
     .footer-links {
         display:none;
     }
@@ -207,10 +204,23 @@ font-family:"Open Sans",sans-serif;
 
     }
     .object-name-content {
-        padding-left: 10px;
+        padding-left: 15px;
         padding-right: 10px;
     }
-}
+    .hide-on-desktop a i {
+         font-size: 35px;
+    }
+    .container-fluid .Logo .LogoI {
+        width:25vw
+
+    }
+    .hero-section  {
+        background-size: 100% 100%;
+        background-position: center;
+        
+    }
+} 
+
 
 
 

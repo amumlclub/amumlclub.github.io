@@ -94,7 +94,7 @@ MEMBERSHIP HERO
 }
 #navbar ul .hide-on-mobile a::after{
     content:'';
-    background:#2563eb;
+    background:#DBAB44;
     width:0;
     height:3px;
     position:absolute;
@@ -177,10 +177,13 @@ MEMBERSHIP HERO
 }
 @media(min-width:360px) and (max-width:800px){
     .container-fluid .logo .Logo img {
-        width: 30vw ;
+        width: 25vw ;
     }
     .footer-links {
         display:none;
+    }
+    .hide-on-desktop a i {
+         font-size: 35px;
     }
 }
 
