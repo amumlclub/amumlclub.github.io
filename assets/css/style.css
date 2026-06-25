@@ -222,7 +222,7 @@ font-family:"Open Sans",sans-serif;
         width:100vw;
         height:100vh;
         background-size: cover !important;
-        background-position: center top !important;
+        background-position: center center !important;
         background-image: url("../img/hero-mobile-image.jpeg") !important;
         object-fit: contain;
         background-repeat: no-repeat;
