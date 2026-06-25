@@ -209,17 +209,27 @@ font-family:"Open Sans",sans-serif;
     }
     .hide-on-desktop a i {
          font-size: 35px;
+         font-weight: 200;
     }
     .container-fluid .Logo .LogoI {
         width:25vw
 
     }
-    .hero-section  {
-        background-size: 100% 100%;
-        background-position: center;
-        
-    }
+    
 } 
+@media(min-width:360px) and (max-width:500px) {
+    .hero-section {
+        width:100vw;
+        height:100vh;
+        background-size: cover !important;
+        background-position: center top !important;
+        background-image: url("../img/hero-mobile-image.jpeg") !important;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+}
 
 
 
