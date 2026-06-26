@@ -220,7 +220,7 @@ font-family:"Open Sans",sans-serif;
 @media(min-width:360px) and (max-width:500px) {
     .hero-section {
         width:100vw;
-        height:100vh;
+        height:60vh;
         background-size: cover !important;
         background-position: center bottom !important;
         background-image: url("../img/hero-mobile-image.jpeg") !important;
