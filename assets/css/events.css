@@ -185,6 +185,24 @@
     }
 }
 
+@media(min-width:360px) and (max-width:500px) {
+    .events-hero {
+        width:100vw;
+        height:100%;
+        background-size: cover !important;
+        background-position: center !important;
+        background-image: url("../img/collage-2new.png") !important;
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+    
+
+}
+
+
+
 .events-hero{
 
 min-height:70vh;
