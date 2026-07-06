@@ -586,27 +586,7 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
   pointer-events: none;
 }
 /* FORCE single row for departments */
-.departments .core-team-row {
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  padding-bottom: 10px;
-}
 
-/* prevent shrinking */
-.departments .member {
-  flex: 0 0 auto;
-}
-.dept-row-wrapper {
-  display: flex;
-  justify-content: center;
-  overflow-x: auto;
-}
-
-.departments .core-team-row {
-  flex-wrap: nowrap;
-  display: inline-flex;   /* key change */
-  gap: 24px;
-}
 
 .departments .member {
   flex: 0 0 auto;
