@@ -1,13 +1,18 @@
 function OpenSidebar() {
-    const sidebar =document.querySelector('#header-side');
-    sidebar.style.display='flex';
+    const sidebar = document.querySelector("#header-side");
+    const overlay = document.querySelector("#overlay");
+
+    sidebar.classList.add("show");
+    overlay.classList.add("show");
 }
 
 function CloseSidebar() {
-    const sidebar =document.querySelector('#header-side');
-    sidebar.style.display='none';
+    const sidebar = document.querySelector("#header-side");
+    const overlay = document.querySelector("#overlay");
+
+    sidebar.classList.remove("show");
+    overlay.classList.remove("show");
 }
- 
 // ================= FAQ =================
 
 const faqItems = document.querySelectorAll(".faq-item");
