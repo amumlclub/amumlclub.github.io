@@ -63,21 +63,61 @@
 </div>
 
 </header>
-<header id="header-side" class="header ">
-   <nav id="navbar-side" >
-      <ul>
-          <li class="cross"><a href="#" onclick='CloseSidebar()'><i class="ri-close-line"></i></a></li>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="about.html">Team</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="Events.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="membership.html">Membership</a></li>
+<div id="overlay" onclick="CloseSidebar()"></div>
+<header id="header-side">
 
-      </ul>
+    <div class="sidebar-top">
+        <i class="ri-close-line" onclick="CloseSidebar()"></i>
+    </div>
+
+    <nav id="navbar-side">
+
+        <a href="index.html" class="menu-item active">
+            <span>HOME</span>
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+
+        <a href="about.html" class="menu-item">
+            <span>TEAM</span>
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+
+        <a href="projects.html" class="menu-item">
+            <span>PROJECTS</span>
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+
+        <a href="Events.html" class="menu-item">
+            <span>EVENTS</span>
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+
+        <a href="membership.html" class="menu-item">
+            <span>MEMBERSHIP</span>
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+
+        <a href="contact.html" class="menu-item">
+            <span>CONTACT</span>
+            <i class="ri-arrow-right-s-line"></i>
+        </a>
+
     </nav>
 
+    <div class="sidebar-bottom">
 
+        <img src="assets/img/home-page/MLC_LOGO-removebg-preview.png"
+             alt="MLC Logo">
+
+        <div class="sidebar-social">
+
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-github-fill"></i></a>
+
+        </div>
+
+    </div>
 
 </header> 
 
