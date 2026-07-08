@@ -273,6 +273,31 @@ PROJECT HERO
     }
 }
 
+@media(min-width:360px) and (max-width:500px) {
+    .footer .footer-legal .credits .web-de-cr {
+        display: block;
+    }
+    .section-header h2:before,
+    .section-header h2:after {  
+        display: none;
+
+    }
+    .section-header h2 {
+        position: relative;
+        display: inline-block;
+        
+    }
+
+    .section-header h2:after {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 2px;
+        margin: 1px auto 0;
+        border-radius: 2px;
+    }
+}
+
 .projects-hero{
 min-height:70vh;
 

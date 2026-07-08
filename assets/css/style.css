@@ -298,36 +298,33 @@ font-family:"Open Sans",sans-serif;
          font-size: 35px;
          font-weight: 200;
     }
-    .container-fluid .Logo .LogoI {
-        width:25vw
-
+    .container-fluid .logo .Logo img {
+        width: 25vw ;
     }
     
 } 
-@media(min-width:360px) and (max-width:500px) {
+@media(min-width:360px) and (max-width:500px) { 
     .hero-section {
         width:100vw;
-        height:100vh;
+        height:100%;
         background-size: cover !important;
-        background-position: bottom center!important;
+        background-position: center !important;
         background-image: url("../img/hero-mobile-image.jpeg") !important;
         object-fit: contain;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
 
+    .object-name-content {
+        text-align: justify;
+    }
+    .footer .footer-legal .credits .web-de-cr {
+        display: block;
+    }
+    
+    
+
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

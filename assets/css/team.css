@@ -29,9 +29,7 @@
     width: 150px;
     border-radius:10px;
 }
-.container-fluid .logo .Logo img:hover{
-    
-}
+
 
 #navbar{
     height:100%;
@@ -277,6 +275,22 @@
          font-size: 35px;
     }
 }
+@media(min-width:360px) and (max-width:500px) {
+  .about-club p {
+    text-align: justify;
+    margin-top: 10px;
+  }
+  .footer .footer-legal .credits .web-de-cr {
+        display: block;
+  }
+
+  .section-header h2:before,
+  .section-header h2:after {
+    width: 15px;
+  }
+
+}
+
 
 .team-hero {
   min-height: 70vh;

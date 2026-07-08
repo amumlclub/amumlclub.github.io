@@ -271,6 +271,16 @@
          font-size: 35px;
     }
 }
+@media(min-width:360px) and (max-width:500px) {
+    .footer .footer-legal .credits .web-de-cr {
+        display: block;
+    }
+}
+
+
+
+
+
 
 .events-hero{
 
