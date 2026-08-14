@@ -8,6 +8,7 @@
     position:absolute;
     top:0;
     z-index:1000;
+        background-color: inherit;
 
 }
 .container-fluid {
@@ -365,10 +366,22 @@ background:#111827;
 
 .core-team-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  align-items: flex-start;
+
+  column-gap: 24px;
+  row-gap: 48px !important;
+
   margin-top: 40px;
-  padding-bottom: 10px;
+}
+
+.departments .core-team-row {
+  max-width: 1150px;
+  margin-inline: auto;
+
+  column-gap: 24px;
+  row-gap: 52px !important;
 }
 
 .core-team-row .member {
@@ -399,14 +412,6 @@ overflow:hidden;
 color:#e5e7eb;
 }
 
-.advisor-card {
-  padding: 20px;
-  text-align: center;
-}
-
-.dept-member {
-  text-align: center;
-}
 
 
 /* ====================================
@@ -438,22 +443,6 @@ color:#e5e7eb;
   object-fit: contain;
 }
 
-.advisor-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.dept-member img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-
 /* ====================================
    SOCIAL ICON POSITION
 ==================================== */
@@ -483,20 +472,6 @@ background:#0f172a;
 padding:80px 0;
 background:#111827;
 }
-
-.dept-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-weight: 600;
-}
-
-.dept-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 
 /* ====================================
    CORE TEAM CARD
@@ -563,71 +538,8 @@ background:#111827;
 }
 
 /* ====================================
-   ADVISOR & DEPT MEMBER CARD (Same as Core Team)
-==================================== */
-
-.advisor-card,
-.dept-member{
-position:relative;
-background:#1f2937;
-border-radius:12px;
-padding:18px;
-text-align:center;
-box-shadow:0 15px 35px rgba(0,0,0,0.35);
-transition:transform 0.35s ease, box-shadow 0.35s ease;
-overflow:hidden;
-color:#e5e7eb;
-}
-
-/* image styling */
-
-.advisor-img,
-.dept-member img {
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
-  transition: transform 0.35s ease;
-}
-
-/* text spacing (if similar structure exists) */
-
-.advisor-info,
-.dept-member-info {
-  margin-top: 10px;
-}
-
-.advisor-info h4,
-.dept-member-info h4 {
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-
-.advisor-info span,
-.dept-member-info span {
-  font-size: 12px;
-  color:#9ca3af;
-}
-
-/* ====================================
    HOVER INTERACTIONS
 ==================================== */
-
-
-
-/* card lift */
-.advisor-card:hover,
-.dept-member:hover{
-transform:translateY(-10px) scale(1.04);
-box-shadow:0 22px 50px rgba(0,0,0,0.45);
-}
-
-/* image zoom */
-.advisor-card:hover .advisor-img,
-.dept-member:hover img {
-  transform: scale(1.08);
-}
-
 
 .member-card:hover{
 transform:translateY(-14px) scale(1.06);
@@ -637,26 +549,6 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
 
 .member-card:hover .member-img{
   transform:scale(1.12);
-}
-.dept-heading {
-  font-size: 22px;
-  font-weight: 600;
-  color: #e5e7eb;
-  margin-bottom: 25px;
-  position: relative;
-  display: inline-block;
-}
-
-/* subtle underline accent */
-.dept-heading::after {
-  content: "";
-  width: 40%;
-  height: 2px;
-  background: #3b82f6;
-  position: absolute;
-  left: 30%;
-  bottom: -6px;
-  border-radius: 2px;
 }
 .member-card {
   position: relative;
@@ -670,16 +562,7 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
 .member-card::before {
   pointer-events: none;
 }
-/* FORCE single row for departments */
 
-
-.departments .member {
-  flex: 0 0 auto;
-}
-.faculty-section .member-img {
-  height: 180px;
-  object-fit: cover;
-}
 #overlay{
 
     position:fixed;
@@ -702,4 +585,201 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
     opacity:1;
 
     visibility:visible;
+}
+
+.member {
+  flex: 0 1 250px;
+  width: 250px;
+  max-width: 250px;
+}
+
+/* ====================================
+   CARD
+==================================== */
+
+.member-card {
+  position: relative;
+  overflow: hidden;
+
+  padding: 18px;
+
+  border: 1px solid var(--color-line) !important;
+  border-radius: var(--radius) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.045),
+      rgba(255,255,255,0.018)
+    ) !important;
+
+  box-shadow: none !important;
+
+  color: var(--color-text);
+
+  transition:
+    transform 0.35s var(--ease),
+    border-color 0.35s var(--ease),
+    background 0.35s var(--ease);
+}
+
+
+/* ====================================
+   IMAGE
+==================================== */
+
+.member-img {
+  display: block;
+
+  width: 100%;
+  height: 220px;
+
+  object-fit: contain;
+
+  transition: transform 0.45s var(--ease);
+}
+
+
+/* ====================================
+   INFO
+==================================== */
+
+.member-info {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.member-info h4 {
+  margin: 0 0 5px;
+
+  color: var(--color-text);
+
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.member-info span {
+  display: block;
+
+  color: var(--color-accent) !important;
+
+  font-family: var(--font-mono);
+  font-size: 11px !important;
+  font-weight: 500;
+
+  letter-spacing: 0.10em;
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+
+/* ====================================
+   LINKEDIN / SOCIAL
+==================================== */
+
+.member-card .social {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+}
+
+.member-card .social a {
+  display: grid;
+  place-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid var(--color-line);
+  border-radius: 50%;
+
+  background: rgba(8,13,22,0.65);
+
+  color: var(--color-muted);
+
+  transition:
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    background 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+
+.member-card .social a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  transform: translateY(-2px);
+}
+
+
+/* ====================================
+   HOVER
+==================================== */
+
+.member:hover .member-card {
+  transform: translateY(-8px);
+
+  border-color: var(--color-line-strong) !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.065),
+      rgba(255,255,255,0.022)
+    ) !important;
+}
+
+.member:hover .member-img {
+  transform: scale(1.035);
+}
+@media (max-width: 992px) {
+  .member {
+    flex-basis: 220px;
+    width: 220px;
+    max-width: 220px;
+  }
+
+  .member-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .core-team-row {
+    column-gap: 16px;
+    row-gap: 40px !important;
+  }
+
+  .member {
+    flex: 0 1 calc(50% - 8px);
+    width: calc(50% - 8px);
+    max-width: calc(50% - 8px);
+  }
+
+  .member-card {
+    padding: 12px;
+  }
+
+  .member-img {
+    height: 170px;
+  }
+
+  .member-info h4 {
+    font-size: 14px;
+  }
+
+  .member-info span {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .member {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
 }

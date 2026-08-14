@@ -21,7 +21,7 @@ font-family:"Open Sans",sans-serif;
     position:absolute;
     top:0;
     z-index:1000;
-
+    background-color: inherit;
 }
 .container-fluid {
     width:100%;

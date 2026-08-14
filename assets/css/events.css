@@ -6,6 +6,7 @@
     position:absolute;
     top:0;
     z-index:1000;
+        background-color: inherit;
 
 }
 .container-fluid {
@@ -13,6 +14,7 @@
     height:100%;
     display:flex;
     justify-content:flex-end;
+    
 }
 
 .container-fluid .logo {
