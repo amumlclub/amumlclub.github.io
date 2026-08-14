@@ -5,9 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
  
   const preloader = document.querySelector('#preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
+    const removePreloader = () => {
       preloader.remove();
-    });
+    };
+
+    window.addEventListener('load', removePreloader);
+    window.setTimeout(removePreloader, 1200);
   }
 
   
@@ -69,16 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('load', togglescrollTop);
     document.addEventListener('scroll', togglescrollTop);
-    scrollTop.addEventListener('click', window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    }));
+    scrollTop.addEventListener('click', (event) => {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
   }
 
   
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  if (typeof GLightbox === 'function') {
+    GLightbox({
+      selector: '.glightbox'
+    });
+  }
 
   
   let portfolionIsotope = document.querySelector('.portfolio-isotope');
@@ -90,6 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let portfolioSort = portfolionIsotope.getAttribute('data-portfolio-sort') ? portfolionIsotope.getAttribute('data-portfolio-sort') : 'original-order';
 
     window.addEventListener('load', () => {
+      if (typeof Isotope !== 'function') return;
+
       let portfolioIsotope = new Isotope(document.querySelector('.portfolio-container'), {
         itemSelector: '.portfolio-item',
         layoutMode: portfolioLayout,
@@ -116,63 +126,71 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   
-  new Swiper('.slides-1', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
+  if (typeof Swiper === 'function' && document.querySelector('.slides-1')) {
+    new Swiper('.slides-1', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  }
 
   /**
    * Init swiper slider with 2 slides at once in desktop view
    */
-  new Swiper('.slides-2', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
+  if (typeof Swiper === 'function' && document.querySelector('.slides-2')) {
+    new Swiper('.slides-2', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
       },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
 
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 20
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        }
       }
-    }
-  });
+    });
+  }
 
   
-  new PureCounter();
+  if (typeof PureCounter === 'function') {
+    new PureCounter();
+  }
 
 
   function aos_init() {
+    if (typeof AOS === 'undefined') return;
+
     AOS.init({
       duration: 800,
       easing: 'slide',

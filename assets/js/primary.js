@@ -1,40 +1,19 @@
 function OpenSidebar() {
-    const sidebar = document.querySelector("#header-side");
-    const overlay = document.querySelector("#overlay");
+  const sidebar = document.querySelector("#header-side");
+  const overlay = document.querySelector("#overlay");
+  if (!sidebar || !overlay) return;
 
-    sidebar.classList.add("show");
-    overlay.classList.add("show");
+  sidebar.classList.add("show");
+  overlay.classList.add("show");
+  document.body.classList.add("nav-open");
 }
 
 function CloseSidebar() {
-    const sidebar = document.querySelector("#header-side");
-    const overlay = document.querySelector("#overlay");
+  const sidebar = document.querySelector("#header-side");
+  const overlay = document.querySelector("#overlay");
+  if (!sidebar || !overlay) return;
 
-    sidebar.classList.remove("show");
-    overlay.classList.remove("show");
+  sidebar.classList.remove("show");
+  overlay.classList.remove("show");
+  document.body.classList.remove("nav-open");
 }
-// ================= FAQ =================
-
-const faqItems = document.querySelectorAll(".faq-item");
-
-faqItems.forEach(item => {
-
-    const button = item.querySelector(".faq-question");
-
-    button.addEventListener("click", () => {
-
-        const isOpen = item.classList.contains("active");
-
-        faqItems.forEach(i => {
-            i.classList.remove("active");
-            i.querySelector(".faq-icon").textContent = "+";
-        });
-
-        if (!isOpen) {
-            item.classList.add("active");
-            item.querySelector(".faq-icon").textContent = "−";
-        }
-
-    });
-
-});

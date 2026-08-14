@@ -15,7 +15,8 @@
 
 <link href="assets/css/main.css" rel="stylesheet">
 <link href="assets/css/events.css" rel="stylesheet">
-
+<link href="assets/css/lab.css?v=20260814" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,12 +31,13 @@
 
 <nav id="navbar" class="navbar">
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">Team</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="Events.html" class="active">Events</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="membership.html">Membership</a></li>
+<li class="hide-on-mobile"><a href="index.html">Home</a></li>
+<li class="hide-on-mobile"><a href="about.html">Team</a></li>
+<li class="hide-on-mobile"><a href="projects.html">Projects</a></li>
+<li class="hide-on-mobile"><a href="Events.html" class="active">Events</a></li>
+<li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+<li class="hide-on-mobile"><a href="membership.html">Membership</a></li>
+<li class="hide-on-desktop"><a href="#" onclick="OpenSidebar()"><i class="ri-menu-3-line"></i></a></li>
 </ul>
 </nav>
 
@@ -110,8 +112,7 @@
 <h1>Seminars</h1>
 
 <p>
-Explore hackathons organized by the Machine Learning Club.
-Participate, build projects, and compete with innovators.
+Explore seminars, webinars, and technical discussions hosted by the Machine Learning Club.
 </p>
 
 </div>
@@ -236,6 +237,9 @@ Students developed AI tools solving real-world problems.
         </div>
       </div>
     </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/lab.js?v=20260814"></script>
 </body>
 
 </html>
