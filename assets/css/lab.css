@@ -1150,7 +1150,8 @@ section {
    TEAM CARD
 ==================================== */
 
-.team-directory .member {
+.team-directory .member,
+.departments .member {
   width: 200px !important;
   max-width: 200px !important;
   min-width: 200px !important;
@@ -1158,7 +1159,8 @@ section {
   margin: 0;
 }
 
-.team-directory .member-card {
+.team-directory .member-card,
+.departments .member-card {
   width: 200px !important;
   height: 245px !important;
 
@@ -1171,9 +1173,9 @@ section {
   overflow: hidden;
 }
 
-.team-directory .member-img {
-  width: 100% !important;
-  height: 205px !important;
+.team-directory .member-img,
+.departments .member-img {
+  width: 90% !important;
 
   object-fit: contain !important;
   object-position: center bottom;
@@ -1193,12 +1195,14 @@ section {
   text-align: center;
 }
 
-.team-directory .member-info h4 {
+.team-directory .member-info h4,
+.departments .member-info h4 {
   font-size: 14px;
   line-height: 1.3;
 }
 
-.team-directory .member-info span {
+.team-directory .member-info span,
+.departments .member-info span {
   font-size: 10px !important;
 }
 
@@ -1275,19 +1279,20 @@ section {
     grid-template-columns: 180px !important;
   }
 
-  .team-directory .member,
-  .team-directory .member-card,
-  .team-directory .member-info {
+  .team-directory .member
+ {
     width: 180px !important;
     max-width: 180px !important;
     min-width: 0;
   }
 
-  .team-directory .member-card {
+.team-directory .member-card,
+.departments .member-card {
     height: 220px !important;
   }
 
-  .team-directory .member-img {
+  .team-directory .member-img,
+.departments .member-img {
     height: 185px !important;
   }
 }
