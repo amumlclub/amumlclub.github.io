@@ -1279,8 +1279,7 @@ section {
     grid-template-columns: 180px !important;
   }
 
-  .team-directory .member,
-  .departments 
+  .team-directory .member
  {
     width: 180px !important;
     max-width: 180px !important;
