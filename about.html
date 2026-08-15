@@ -1,741 +1,791 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<title>Team | MLC</title>
+    <title>Team | MLC</title>
 
-<link href="assets/img/mlc-logo.jpeg" rel="icon">
+    <link href="assets/img/mlc-logo.jpeg" rel="icon" />
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-<!-- Vendor CSS -->
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Vendor CSS -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
 
-<!-- Main CSS -->
-<link href="assets/css/main.css" rel="stylesheet">
-<link href="assets/css/team.css" rel="stylesheet">
-<link href="assets/css/lab.css?v=20260814" rel="stylesheet">
-</head>
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/team.css" rel="stylesheet" />
+    <link href="assets/css/lab.css?v=20260814" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
+    <header id="header" class="header d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <div class="Logo">
+            <img
+              src="assets/img/home-page/MLC_LOGO-removebg-preview.png"
+              id="LogoI"
+            />
+          </div>
+        </a>
 
-<header id="header" class="header d-flex align-items-center">
-
-<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-<a href="index.html" class="logo d-flex align-items-center">
-<div class="Logo"><img src="assets/img/home-page/MLC_LOGO-removebg-preview.png" id="LogoI"></div>
-</a>
-
-<nav id="navbar" class="navbar">
-<ul>
-<li class="hide-on-mobile"><a href="index.html">Home</a></li>
-<li class="hide-on-mobile"><a href="about.html" class="active">Team</a></li>
-<li class="hide-on-mobile"><a href="projects.html">Projects</a></li>
-<li class="hide-on-mobile"><a href="Events.html">Events</a></li>
-<li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
-<li class="hide-on-mobile"><a href="membership.html">Membership</a></li>
-<li class="hide-on-desktop"><a href="#" onclick="OpenSidebar()"><i class="ri-menu-3-line"></i></a></li> 
-</ul>
-</nav>
-
-</div>
-
-</header>
-<div id="overlay" onclick="CloseSidebar()"></div>
-<header id="header-side">
-
-    <div class="sidebar-top">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+            <li class="hide-on-mobile">
+              <a href="about.html" class="active">Team</a>
+            </li>
+            <li class="hide-on-mobile"><a href="projects.html">Projects</a></li>
+            <li class="hide-on-mobile"><a href="Events.html">Events</a></li>
+            <li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+            <li class="hide-on-mobile">
+              <a href="membership.html">Membership</a>
+            </li>
+            <li class="hide-on-desktop">
+              <a href="#" onclick="OpenSidebar()"
+                ><i class="ri-menu-3-line"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="overlay" onclick="CloseSidebar()"></div>
+    <header id="header-side">
+      <div class="sidebar-top">
         <i class="ri-close-line" onclick="CloseSidebar()"></i>
-    </div>
+      </div>
 
-    <nav id="navbar-side">
-
+      <nav id="navbar-side">
         <a href="index.html" class="menu-item">
-            <span>HOME</span>
-            <i class="ri-arrow-right-s-line"></i>
+          <span>HOME</span>
+          <i class="ri-arrow-right-s-line"></i>
         </a>
 
         <a href="about.html" class="menu-item active">
-            <span>TEAM</span>
-            <i class="ri-arrow-right-s-line"></i>
+          <span>TEAM</span>
+          <i class="ri-arrow-right-s-line"></i>
         </a>
 
         <a href="projects.html" class="menu-item">
-            <span>PROJECTS</span>
-            <i class="ri-arrow-right-s-line"></i>
+          <span>PROJECTS</span>
+          <i class="ri-arrow-right-s-line"></i>
         </a>
 
         <a href="Events.html" class="menu-item">
-            <span>EVENTS</span>
-            <i class="ri-arrow-right-s-line"></i>
+          <span>EVENTS</span>
+          <i class="ri-arrow-right-s-line"></i>
         </a>
 
         <a href="membership.html" class="menu-item">
-            <span>MEMBERSHIP</span>
-            <i class="ri-arrow-right-s-line"></i>
+          <span>MEMBERSHIP</span>
+          <i class="ri-arrow-right-s-line"></i>
         </a>
 
         <a href="contact.html" class="menu-item">
-            <span>CONTACT</span>
-            <i class="ri-arrow-right-s-line"></i>
+          <span>CONTACT</span>
+          <i class="ri-arrow-right-s-line"></i>
         </a>
+      </nav>
 
-    </nav>
-
-    <div class="sidebar-bottom">
-
-        <img src="assets/img/home-page/MLC_LOGO-removebg-preview.png"
-             alt="MLC Logo">
+      <div class="sidebar-bottom">
+        <img
+          src="assets/img/home-page/MLC_LOGO-removebg-preview.png"
+          alt="MLC Logo"
+        />
 
         <div class="sidebar-social">
-
-            <a href="#"><i class="ri-linkedin-fill"></i></a>
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-github-fill"></i></a>
-
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-github-fill"></i></a>
         </div>
+      </div>
+    </header>
 
-    </div>
+    <main id="main">
+      <!-- HERO -->
+      <section class="team-hero d-flex align-items-center">
+        <div class="container text-center">
+          <h5 class="club-name">AMU Machine Learning Club</h5>
+          <h1>Team Directory</h1>
+          <p>
+            The students and faculty advisors behind the Machine Learning Club
+            at Aligarh Muslim University.
+          </p>
+        </div>
+      </section>
 
-</header>
+      <!-- ABOUT -->
+      <section class="about-club">
+        <div class="container">
+          <h2 class="section-title">About Us</h2>
 
-<main id="main">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="assets/img/members-club_1.jpeg"
+                class="img-fluid about-img"
+              />
+            </div>
 
-<!-- HERO -->
-<section class="team-hero d-flex align-items-center">
-<div class="container text-center">
-<h5 class="club-name">AMU Machine Learning Club</h5>
-<h1>Team Directory</h1>
-<p>The students and faculty advisors behind the Machine Learning Club at Aligarh Muslim University.</p>
-</div>
-</section>
+            <div class="col-lg-6">
+              <p>
+                The Machine Learning Club at Aligarh Muslim University is a
+                student-led community exploring machine learning, artificial
+                intelligence, and data science.
+              </p>
 
+              <p>
+                We learn by building through projects, research, workshops,
+                competitions, and collaborative exploration.
+              </p>
 
-<!-- ABOUT -->
-<section class="about-club">
-<div class="container">
-<h2 class="section-title">About Us</h2>
-
-<div class="row align-items-center">
-
-<div class="col-lg-6">
-<img src="assets/img/members-club_1.jpeg" class="img-fluid about-img">
-</div>
-
-<div class="col-lg-6">
-<p>
-  The Machine Learning Club at Aligarh Muslim University is a student-led
-  community exploring machine learning, artificial intelligence, and data science.
-</p>
-
-<p>
-  We learn by building through projects, research, workshops, competitions,
-  and collaborative exploration.
-</p>
-
-<p>
-  Our goal is to build a culture where curiosity becomes capability—where
-  students learn deeply, experiment freely, and turn ideas into meaningful
-  intelligent systems.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="team-directory lab-section">
-  <div class="container">
-
-    <div class="section-header">
-      <h2>The Team</h2>
-      <p>
-        The people who lead, guide, and build the Machine Learning Club at Aligarh Muslim University.
-      </p>
-    </div>
-
-    <div class="core-team-row">
-
-      <!-- President -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/team/Amaan.webp"
-            alt="Mohammad Amaan"
-            class="member-img"
-          >
-          <div class="social">
-            <a href="https://www.linkedin.com/in/mohdamaaan/" aria-label="Mohammad Amaan on LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
+              <p>
+                Our goal is to build a culture where curiosity becomes
+                capability—where students learn deeply, experiment freely, and
+                turn ideas into meaningful intelligent systems.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="member-info text-center">
-          <h4>Mohammad Amaan</h4>
-          <span>President</span>
-        </div>
-      </div>
-
-
-      <!-- Vice President -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/team/Samiya.png"
-            alt="Samiya Kamal"
-            class="member-img"
-          >
-          <div class="social">
-            <a href="https://www.linkedin.com/in/samiya-kamal-8231582a1/" aria-label="Samiya Kamal on LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Samiya Kamal</h4>
-          <span>Vice President</span>
-        </div>
-      </div>
-
-
-      <!-- Secretary -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/team/Arham.png"
-            alt="Mohammad Arham Malik"
-            class="member-img"
-          >
-          <div class="social">
-            <a href="https://www.linkedin.com/in/arham-malik-722335312/" aria-label="Mohammad Arham Malik on LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Mohammad Arham Malik</h4>
-          <span>Secretary</span>
-        </div>
-      </div>
-
-
-      <!-- Technical Lead -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/team/Basil.webp"
-            alt="Syed Basil Rizvi"
-            class="member-img"
-          >
-          <div class="social">
-            <a href="https://www.linkedin.com/in/syed-basil-rizvi-5b251232a/" aria-label="Syed Basil Rizvi on LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Syed Basil Rizvi</h4>
-          <span>Technical Lead</span>
-        </div>
-      </div>
-
-
-      <!-- Design & Media Lead -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/team/MahwishFatima.png"
-            alt="Mahwish Fatima"
-            class="member-img"
-          >
-          <div class="social">
-            <a href="https://www.linkedin.com/in/mahwishfatma/" aria-label="Mahwish Fatima on LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Mahwish Fatima</h4>
-          <span>Design &amp; Media Lead</span>
-        </div>
-      </div>
-
-
-      <!-- Events Coordinator Lead -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/team/Mahum.webp"
-            alt="Mahum Siddiqui"
-            class="member-img"
-          >
-          <div class="social">
-            <a href="https://www.linkedin.com/in/mahum-siddiqui-620a642aa/" aria-label="Mahum Siddiqui on LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Mahum Siddiqui</h4>
-          <span>Events Coordinator Lead</span>
-        </div>
-      </div>
-
-
-
-
-
-      <!-- Faculty Advisor -->
-      <div class="member">
-  <div class="member-card">
-    <img
-      src="assets/img/ProfRashidAli.png"
-      alt="Prof. Rashid Ali"
-      class="member-img"
-    >
-  </div>
-
-  <div class="member-info">
-    <h4>Prof. Rashid Ali</h4>
-    <span>Faculty Advisor</span>
-  </div>
-</div>
-
-      <!-- Faculty Advisor -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/DrJunaidAli Reshi.png"
-            alt="Dr. Junaid Ali Reshi"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info">
-          <h4>Dr. Junaid Ali Reshi</h4>
-          <span>Faculty Advisor</span>
-        </div>
-      </div>
-
-
-      <!-- Faculty Advisor -->
-      <div class="member">
-        <div class="member-card">
-          <img
-            src="assets/img/DrNadeemAkhtar.png"
-            alt="Dr. Nadeem Akhtar"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info">
-          <h4>Dr. Nadeem Akhtar</h4>
-          <span>Faculty Advisor</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- DEPARTMENTS -->
-<section class="departments">
-  <div class="container">
-
-    <div class="section-header">
-      <h2>Members</h2>
-      <p>
-        Students contributing across the technical, creative, and organizational work of the club.
-      </p>
-    </div>
-
-    <div class="core-team-row">
-
-      <!-- Technical Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
+      <section class="team-directory lab-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>The Team</h2>
+            <p>
+              The people who lead, guide, and build the Machine Learning Club at
+              Aligarh Muslim University.
+            </p>
           </div>
 
-          <img
-            src="assets/img/club_members/mohammad_anas_technical.png"
-            alt="Mohammad Anas"
-            class="member-img"
-          >
+          <div class="core-team-row">
+            <!-- President -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/team/Amaan.webp"
+                  alt="Mohammad Amaan"
+                  class="member-img"
+                />
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/mohdamaaan/"
+                    aria-label="Mohammad Amaan on LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Mohammad Amaan</h4>
+                <span>President</span>
+              </div>
+            </div>
+
+            <!-- Vice President -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/team/Samiya.png"
+                  alt="Samiya Kamal"
+                  class="member-img"
+                />
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/samiya-kamal-8231582a1/"
+                    aria-label="Samiya Kamal on LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Samiya Kamal</h4>
+                <span>Vice President</span>
+              </div>
+            </div>
+
+            <!-- Secretary -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/team/Arham.png"
+                  alt="Mohammad Arham Malik"
+                  class="member-img"
+                />
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/arham-malik-722335312/"
+                    aria-label="Mohammad Arham Malik on LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Mohammad Arham Malik</h4>
+                <span>Secretary</span>
+              </div>
+            </div>
+
+            <!-- Technical Lead -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/team/Basil.webp"
+                  alt="Syed Basil Rizvi"
+                  class="member-img"
+                />
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/syed-basil-rizvi-5b251232a/"
+                    aria-label="Syed Basil Rizvi on LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Syed Basil Rizvi</h4>
+                <span>Technical Lead</span>
+              </div>
+            </div>
+
+            <!-- Design & Media Lead -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/team/MahwishFatima.png"
+                  alt="Mahwish Fatima"
+                  class="member-img"
+                />
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/mahwishfatma/"
+                    aria-label="Mahwish Fatima on LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Mahwish Fatima</h4>
+                <span>Design &amp; Media Lead</span>
+              </div>
+            </div>
+
+            <!-- Events Coordinator Lead -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/team/Mahum.webp"
+                  alt="Mahum Siddiqui"
+                  class="member-img"
+                />
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/mahum-siddiqui-620a642aa/"
+                    aria-label="Mahum Siddiqui on LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Mahum Siddiqui</h4>
+                <span>Events Coordinator Lead</span>
+              </div>
+            </div>
+
+            <!-- Faculty Advisor -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/ProfRashidAli.png"
+                  alt="Prof. Rashid Ali"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info">
+                <h4>Prof. Rashid Ali</h4>
+                <span>Faculty Advisor</span>
+              </div>
+            </div>
+
+            <!-- Faculty Advisor -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/DrJunaidAli Reshi.png"
+                  alt="Dr. Junaid Ali Reshi"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info">
+                <h4>Dr. Junaid Ali Reshi</h4>
+                <span>Faculty Advisor</span>
+              </div>
+            </div>
+
+            <!-- Faculty Advisor -->
+            <div class="member">
+              <div class="member-card">
+                <img
+                  src="assets/img/DrNadeemAkhtar.png"
+                  alt="Dr. Nadeem Akhtar"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info">
+                <h4>Dr. Nadeem Akhtar</h4>
+                <span>Faculty Advisor</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="member-info text-center">
-          <h4>Mohammad Anas</h4>
-          <span>Technical Team</span>
-        </div>
-      </div>
-
-
-      <!-- Technical Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
+      <!-- DEPARTMENTS -->
+      <section class="departments">
+        <div class="container">
+          <div class="section-header">
+            <h2>Members</h2>
+            <p>
+              Students contributing across the technical, creative, and
+              organizational work of the club.
+            </p>
           </div>
 
-          <img
-            src="assets/img/club_members/ahmad_zakariya.png"
-            alt="Ahmad Zakariya"
-            class="member-img"
-          >
-        </div>
+          <div class="core-team-row">
+            <!-- Technical Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Mohammad Anas -->
+                  <a
+                    href="https://www.linkedin.com/in/mohd-anas-0638a0204/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
 
-        <div class="member-info text-center">
-          <h4>Ahmad Zakariya</h4>
-          <span>Technical Team</span>
-        </div>
-      </div>
+                <img
+                  src="assets/img/club_members/mohammad_anas_technical.png"
+                  alt="Mohammad Anas"
+                  class="member-img"
+                />
+              </div>
 
+              <div class="member-info text-center">
+                <h4>Mohammad Anas</h4>
+                <span>Technical Team</span>
+              </div>
+            </div>
 
-<!-- Lakshya Varshney -->
-<div class="member">
-  <div class="member-card">
-    <div class="social">
-      <a href="#" aria-label="LinkedIn">
-        <i class="bi bi-linkedin"></i>
-      </a>
-    </div>
+            <!-- Technical Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <a
+                    href="https://www.linkedin.com/in/ahmad-zakariya-482567323/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
 
-    <img
-      src="assets/img/club_members/lakshay-technical.png"
-      alt="Lakshya Varshney"
-      class="member-img"
-    >
-  </div>
+                <img
+                  src="assets/img/club_members/ahmad_zakariya.png"
+                  alt="Ahmad Zakariya"
+                  class="member-img"
+                />
+              </div>
 
-  <div class="member-info text-center">
-    <h4>Lakshya Varshney</h4>
-    <span>Technical Team</span>
-  </div>
-</div>
+              <div class="member-info text-center">
+                <h4>Ahmad Zakariya</h4>
+                <span>Technical Team</span>
+              </div>
+            </div>
 
+            <!-- Lakshya Varshney -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Lakshya Varshney -->
+                  <a
+                    href="https://www.linkedin.com/in/lakshya-varshney/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
 
+                <img
+                  src="assets/img/club_members/lakshay-technical.png"
+                  alt="Lakshya Varshney"
+                  class="member-img"
+                />
+              </div>
 
-      <!-- Technical Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
+              <div class="member-info text-center">
+                <h4>Lakshya Varshney</h4>
+                <span>Technical Team</span>
+              </div>
+            </div>
+
+            <!-- Technical Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Mohammad Arif -->
+                  <a
+                    href="https://www.linkedin.com/in/mdarif4550/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/mohammad_arif_technical.png"
+                  alt="Mohammad Arif"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Mohammad Arif</h4>
+                <span>Technical Team</span>
+              </div>
+            </div>
+
+            <!-- Technical Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Maria Khan -->
+                  <a
+                    href="https://www.linkedin.com/in/maria-khan-b35525360/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/maria_khan_technical.png"
+                  alt="Maria Khan"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Maria Khan</h4>
+                <span>Technical Team</span>
+              </div>
+            </div>
+
+            <!-- Technical Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Mohd Asif Ansari -->
+                  <a
+                    href="https://www.linkedin.com/in/md-asif-ansari-688707385/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/md_asif_ansari.png"
+                  alt="Mohd Asif Ansari"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Mohd Asif Ansari</h4>
+                <span>Technical Team</span>
+              </div>
+            </div>
+
+            <!-- Technical Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Aatifa Rizvi -->
+                  <a
+                    href="https://www.linkedin.com/in/aatifa-rizvi/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/aatifa_rizvi_technical.png"
+                  alt="Aatifa Rizvi"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Aatifa Rizvi</h4>
+                <span>Technical Team</span>
+              </div>
+            </div>
+
+            <!-- Event Coordinator -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <a href="#" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/dastagir_sheikh_event_coordinator.webp"
+                  alt="Dastagir Sheikh"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Dastagir Sheikh</h4>
+                <span>Event Management Team</span>
+              </div>
+            </div>
+
+            <!-- Event Coordinator -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <a href="#" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/saba_anjum_event_coordinator.png"
+                  alt="Saba Anjum"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Saba Anjum</h4>
+                <span>Event Management Team</span>
+              </div>
+            </div>
+
+            <!-- Event Coordinator -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <a href="#" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/tanzeel_arshad_event_coordinator.webp"
+                  alt="Tanzeel Arshad"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Tanzeel Arshad</h4>
+                <span>Event Management Team</span>
+              </div>
+            </div>
+
+            <!-- Event Management -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Shrestha Ratnam -->
+                  <a
+                    href="https://www.linkedin.com/in/shrestha-ratnam-b0b1b7307/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/shrestha_ratnam_event_management.png"
+                  alt="Shrestha Ratnam"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Shrestha Ratnam</h4>
+                <span>Event Management Team</span>
+              </div>
+            </div>
+
+            <!-- Design Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <a href="#" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/arfa_alam_design.png"
+                  alt="Arfa Alam"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Arfa Alam</h4>
+                <span>Design Team</span>
+              </div>
+            </div>
+
+            <!-- Design Team -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Insha Zaheer -->
+                  <a
+                    href="https://www.linkedin.com/in/insha-zaheer-990964418/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/insha_zaheer_design.png"
+                  alt="Insha Zaheer"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Insha Zaheer</h4>
+                <span>Design Team</span>
+              </div>
+            </div>
+
+            <!-- Harshita Singh -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <a href="#" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/harshita-singh-design.png"
+                  alt="Harshita Singh"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Harshita Singh</h4>
+                <span>Design Team</span>
+              </div>
+            </div>
+
+            <!-- Aquib Husain -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Aquib Husain -->
+                  <a
+                    href="https://www.linkedin.com/in/aquib-husain-6412b836a/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/aquib-husain-webdev.png"
+                  alt="Aquib Husain"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Aquib Husain</h4>
+                <span>Web Development</span>
+              </div>
+            </div>
+
+            <!-- Md Adnan -->
+            <div class="member">
+              <div class="member-card">
+                <div class="social">
+                  <!-- Md Adnan -->
+                  <a
+                    href="https://www.linkedin.com/in/md-adnan-94b658337/"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+
+                <img
+                  src="assets/img/club_members/adnan-webdev.png"
+                  alt="Md Adnan"
+                  class="member-img"
+                />
+              </div>
+
+              <div class="member-info text-center">
+                <h4>Md Adnan</h4>
+                <span>Web Development</span>
+              </div>
+            </div>
           </div>
-
-          <img
-            src="assets/img/club_members/mohammad_arif_technical.png"
-            alt="Mohammad Arif"
-            class="member-img"
-          >
         </div>
-
-        <div class="member-info text-center">
-          <h4>Mohammad Arif</h4>
-          <span>Technical Team</span>
-        </div>
-      </div>
-
-
-      <!-- Technical Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/maria_khan_technical.png"
-            alt="Maria Khan"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Maria Khan</h4>
-          <span>Technical Team</span>
-        </div>
-      </div>
-
-
-      <!-- Technical Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/mohd_asif_ansari_technical.png"
-            alt="Mohd Asif Ansari"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Mohd Asif Ansari</h4>
-          <span>Technical Team</span>
-        </div>
-      </div>
-
-
-      <!-- Technical Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/aatifa_rizvi_technical.png"
-            alt="Aatifa Rizvi"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Aatifa Rizvi</h4>
-          <span>Technical Team</span>
-        </div>
-      </div>
-
-
-      <!-- Event Coordinator -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/dastagir_sheikh_event_coordinator.webp"
-            alt="Dastagir Sheikh"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Dastagir Sheikh</h4>
-          <span>Event Management Team</span>
-        </div>
-      </div>
-
-
-      <!-- Event Coordinator -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/saba_anjum_event_coordinator.png"
-            alt="Saba Anjum"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Saba Anjum</h4>
-          <span>Event Management Team</span>
-        </div>
-      </div>
-
-
-      <!-- Event Coordinator -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/tanzeel_arshad_event_coordinator.webp"
-            alt="Tanzeel Arshad"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Tanzeel Arshad</h4>
-          <span>Event Management Team</span>
-        </div>
-      </div>
-
-
-      <!-- Event Management -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/shrestha_ratnam_event_management.png"
-            alt="Shrestha Ratnam"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Shrestha Ratnam</h4>
-          <span>Event Management Team</span>
-        </div>
-      </div>
-
-
-      <!-- Design Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/arfa_alam_design.png"
-            alt="Arfa Alam"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Arfa Alam</h4>
-          <span>Design Team</span>
-        </div>
-      </div>
-
-
-      <!-- Design Team -->
-      <div class="member">
-        <div class="member-card">
-          <div class="social">
-            <a href="#" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-
-          <img
-            src="assets/img/club_members/insha_zaheer_design.png"
-            alt="Insha Zaheer"
-            class="member-img"
-          >
-        </div>
-
-        <div class="member-info text-center">
-          <h4>Insha Zaheer</h4>
-          <span>Design Team</span>
-        </div>
-      </div>
-
-<!-- Harshita Singh -->
-<div class="member">
-  <div class="member-card">
-    <div class="social">
-      <a href="#" aria-label="LinkedIn">
-        <i class="bi bi-linkedin"></i>
-      </a>
-    </div>
-
-    <img
-      src="assets/img/club_members/harshita-singh-design.png"
-      alt="Harshita Singh"
-      class="member-img"
-    >
-  </div>
-
-  <div class="member-info text-center">
-    <h4>Harshita Singh</h4>
-    <span>Design Team</span>
-  </div>
-</div>
-
-<!-- Aquib Husain -->
-<div class="member">
-  <div class="member-card">
-    <div class="social">
-      <a href="#" aria-label="LinkedIn">
-        <i class="bi bi-linkedin"></i>
-      </a>
-    </div>
-
-    <img
-      src="assets/img/club_members/aquib-husain-webdev.png"
-      alt="Aquib Husain"
-      class="member-img"
-    >
-  </div>
-
-  <div class="member-info text-center">
-    <h4>Aquib Husain</h4>
-    <span>Web Development</span>
-  </div>
-</div>
-
-
-<!-- Md Adnan -->
-<div class="member">
-  <div class="member-card">
-    <div class="social">
-      <a href="#" aria-label="LinkedIn">
-        <i class="bi bi-linkedin"></i>
-      </a>
-    </div>
-
-    <img
-      src="assets/img/club_members/adnan-webdev.png"
-      alt="Md Adnan"
-      class="member-img"
-    >
-  </div>
-
-  <div class="member-info text-center">
-    <h4>Md Adnan</h4>
-    <span>Web Development</span>
-  </div>
-</div>
-    </div>
-  </div>
-</section>
-
-</main>
+      </section>
+    </main>
 
     <!-- ======= Original Footer (Unchanged) ======= -->
     <footer id="footer" class="footer">
@@ -745,8 +795,11 @@
             <div class="col-lg-4 col-md-6">
               <div class="footer-info">
                 <div class="footer-logo">
-  <img src="assets/img/home-page/MLC_LOGO-removebg-preview.png" alt="MLC Logo">
-</div>
+                  <img
+                    src="assets/img/home-page/MLC_LOGO-removebg-preview.png"
+                    alt="MLC Logo"
+                  />
+                </div>
                 <p>
                   AI LAB<br />
                   Interdisciplinary Centre for Artificial Intelligence, A.M.U<br /><br />
@@ -809,13 +862,12 @@
         </div>
       </div>
     </footer>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/js/main.js?v=20260814"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="assets/js/lab.js?v=20260814"></script>
-<script src="assets/js/primary.js?v=20260814" ></script>
-
-</body>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/js/main.js?v=20260814"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/lab.js?v=20260814"></script>
+    <script src="assets/js/primary.js?v=20260814"></script>
+  </body>
 </html>
