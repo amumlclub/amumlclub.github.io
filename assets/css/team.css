@@ -280,6 +280,7 @@
   .about-club p {
     text-align: justify;
     margin-top: 10px;
+    line-height: 1.75;
   }
   .footer .footer-legal .credits .web-de-cr {
         display: block;
@@ -321,10 +322,11 @@
    ABOUT SECTION
 ==================================== */
 
-.about-club{
-padding:80px 0;
-background:#0f172a;
-color:#e5e7eb;
+.about-club {
+  padding: 80px 0;
+  background: transparent;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
 }
 
 .col-lg-6:hover img {
@@ -386,7 +388,6 @@ background:#111827;
 
 .core-team-row .member {
   min-width: 170px;
-  max-width: 170px;
 }
 
 .section-header h2{
@@ -481,7 +482,7 @@ background:#111827;
 
 .member-img{
   width:100%;
-  height:180px;
+
   object-fit:contain;
   transition:transform 0.35s ease;
 }
@@ -588,7 +589,7 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
 }
 
 .member {
-  flex: 0 1 250px;
+  flex: 0 0 250px;
   width: 250px;
   max-width: 250px;
 }
@@ -598,6 +599,8 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
 ==================================== */
 
 .member-card {
+    width: 250px;
+  height: 290px;
   position: relative;
   overflow: hidden;
 
@@ -621,6 +624,9 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
     transform 0.35s var(--ease),
     border-color 0.35s var(--ease),
     background 0.35s var(--ease);
+    display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 
@@ -632,10 +638,10 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
   display: block;
 
   width: 100%;
-  height: 220px;
+  height: 240px;
 
   object-fit: contain;
-
+  object-position: center bottom;
   transition: transform 0.45s var(--ease);
 }
 
@@ -645,6 +651,9 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
 ==================================== */
 
 .member-info {
+  width: 250px;
+  min-height: 58px;
+
   margin-top: 14px;
   text-align: center;
 }
@@ -657,6 +666,7 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
   font-size: 15px;
   font-weight: 650;
   line-height: 1.35;
+  min-height: 20px;
 }
 
 .member-info span {
@@ -670,7 +680,7 @@ box-shadow:0 25px 60px rgba(0,0,0,0.5);
 
   letter-spacing: 0.10em;
   line-height: 1.5;
-
+  min-height: 17px;
   text-transform: uppercase;
 }
 

@@ -316,7 +316,7 @@ font-family:"Open Sans",sans-serif;
     }
 
     .object-name-content {
-        text-align: justify;
+        text-align: left;
     }
     .footer .footer-legal .credits .web-de-cr {
         display: block;
@@ -437,10 +437,12 @@ font-weight:700;
 margin-bottom:20px;
 }
 
-.object-name-content{
-font-size:18px;
-line-height:1.7;
-opacity:0.9;
+.object-name-content {
+    font-size: 15px;
+    line-height: 1.8;
+    opacity: 0.85;
+    letter-spacing: 0.01em;
+    color: var(--color-muted);
 }
 
 
@@ -562,9 +564,6 @@ border-radius:14px;
 box-shadow:0 20px 40px rgba(0,0,0,0.5);
 }
 
-.mission-text{
-padding-left:30px;
-}
 
 .mission-points{
 display:grid;
@@ -766,9 +765,10 @@ font-size:34px;
 flex-direction:column;
 }
 
-.mission-text{
-padding-left:0;
-margin-top:30px;
+.mission-text {
+    padding-left: 0;
+    margin-top: 30px;
+    max-width: 640px;
 }
 
 .mission-points{
